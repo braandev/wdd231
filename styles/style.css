@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*********  HEADER INDEX.HTML   ***********/
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding-left: 6%;
+    padding-right: 10%;
+
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45px;
+}
+
+.logoCompany img{
+    height: 100px;
+    width: 100px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navegation{
+    margin-right: 45px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.switchDark{
+    height: 50px;
+    width: 50px;
+}
+
+@media (min-width: 1200px) {
+
+    .hamburger-menu{
+       display: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+/*********  MAIN INDEX.HTML   ***********/
+
+/*********  HERO SECTION INDEX.HTML   ***********/
+
+main{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 5%;  
+    margin-right: 5%;
+}
+
+.hero {
+    position: relative; /* Asegúrate de que el contenedor de la imagen tenga posición relativa */
+}
+
+.hero img {
+    display: block; /* Elimina cualquier espacio blanco debajo de la imagen */
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    position: relative; /* Asegura que los elementos dentro de .hero estén posicionados correctamente */
+}
+
+.buttonContainer {
+    position: absolute;
+    left: 79%;
+    top: 85%; /* 70% de la altura de la imagen */
+    transform: translateX(-50%); /* Centra el botón */
+    width: 100%; /* Permite que el contenedor del botón tenga un ancho relativo al contenedor */
+    text-align: center; /* Centra el botón dentro del contenedor */
+}
+
+button {
+    height: 7vh; /* Ajusta la altura según el 10% de la altura de la ventana */
+    width: 25vw; 
+    font-size: 2vw; 
+    border-radius: 15px;
+   
+}
+
+
+/*********  HOME SECTION EVENTS/CURRENT WEATHER/WEATHER FORECAST INDEX.HTML   ***********/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.homeContainer {
+    display: flex;
+    padding: 10px 20px;
+    gap: 30px;
+    align-items: stretch;
+    flex: 1;
+}
+
+/* Aplica estilo base a todos los hijos directos de homeContainer */
+.homeContainer > * {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Cada una de las 3 columnas */
+.eventsContainer,
+.currentWheatherContainer,
+.WheatherForecastContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* PRIMER COLUMNA */
+.eventsContainer {
+    flex: 2;
+}
+
+/* Título de Events */
+.eventsTitle {
+    background-color: grey;
+    padding: 5px 0px 5px 5px;
+}
+
+/* Contenido que debe crecer y tener fondo */
+.eventsGap {
+    flex-grow: 1;
+}
+
+
+/* LAS OTRAS COLUMNAS DEL MISMO TAMAÑO */
+.currentWheatherContainer,
+.WheatherForecastContainer {
+    flex: 1;
+}
+
+/*********  SEGUNDA COLUMNA  ***********/
+
+.currentWheatherTitle {
+    background-color: grey;
+    padding: 5px 0px 5px 5px;
+}
+
+.currentWheatherContainer > div:nth-of-type(2) {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.infoCurrentWeather {
+    background-color: whitesmoke;
+    height: 100%;
+    display: flex; 
+    flex-direction: row; 
+}
+
+.imageWheatherContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 10px;
+}
+
+.wheatherImage {
+    height: 80px;
+    width: 80px;
+}
+
+.infoWheather {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.infoWheather p {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+
+/*********  ULTIMA COLUMNA  ***********/
+
+.WheatherForecastTitle{
+    background-color: grey;
+    padding: 5px 0px 5px 5px;
+}
+
+.infoForecast p{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+.forecastContainer{
+    background-color: whitesmoke;
+    
+}
+
+
+/*********  ULTIMAS 3 COLUMNAS INDEX.HTML   ***********/
+
+.companiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.companiesContainer{
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.companiesTitle{
+    text-align: center;
+    padding-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.companyContent {
+    display: flex;
+    gap: 20px;
+}
+
+.companyContent > div:first-child {
+    flex: 0 0 auto; 
+}
+
+.companyContent > div:last-child {
+    flex: 1; 
+}
+
+
+.imagecompanies{
+    height: 100px;
+    object-fit: cover;
+    
+    padding-left: 10px;
+    
+}
+
+.companiesInfo p{
+    margin-top: 5px;
+}
+
+
+/*********  FOOTER INDEX.HTML   ***********/
+
+footer {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #f2f2f2; 
+    padding-top: 20px;
+    flex-wrap: wrap;
+ 
+}
+
+.logoFooter{
+    height: 70px;
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rightFooter p{
+    padding-top: 8px;
+}
+
+.leftFooter p{
+    padding-top: 8px;
+}
+
+/* 9. Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+    /* Cabecera */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logoCompany img{
+        height: 50px;
+        width: 50px; 
+    }
+
+    .logoTitle{
+        font-size: 9px;
+    }
+
+    nav li {
+        display: none;
+    }
+    
+    .hamburger-menu{
+        height: 30px;
+        width: 30px;
+        padding-left: 3px;
+    }
+
+    .switchDark{
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Sección Hero */
+    .hero {
+        margin-bottom: 15px;
+        
+    }
+
+    .buttonContainer {
+    position: absolute;
+    left: 79%;
+    top: 75%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    text-align: center; 
+}
+
+   
+    button {
+        width: 30%;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    /* Contenedor Home */
+    .homeContainer {
+        flex-direction: column;
+    }
+    .eventsContainer, .currentWheatherContainer, .WheatherForecastContainer {
+        flex: 1;
+        
+    }
+
+    .eventsGap {
+        background-color: whitesmoke;
+        height: 150px;
+    }
+
+
+    /* Empresas */
+    .companiesGrid {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+
+
+    footer{
+        display: inline-block;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footer .centerfooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .centerFooter {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rightFooter,.leftFooter{
+        padding-top: 10px;
+    }
+
+}
