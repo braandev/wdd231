@@ -1,0 +1,94 @@
+@media (max-width: 980px){
+
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.courses-container .courses .course-selection{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+}
+
+@media (max-width: 600px){
+
+    .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .ticks section {
+    grid-template-columns: 1fr;
+  }
+
+    #open-menu{
+        display: block;
+        padding: 0.2rem;
+        color: black;
+        background-color: transparent;
+        border-radius: 2px;
+        border: none;
+    }
+    #mobile-nav {
+    display: none;
+    flex-direction: column;
+    }
+
+    #mobile-nav.open {
+    display: flex;
+    }
+
+
+    #close-menu {
+    display: none; /* por defecto la X está oculta */
+    padding: 0.2rem;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    border-radius: 2px;
+    }
+
+    #mobile-nav.open {
+    display: flex;
+    }
+
+    /* cuando el menú está abierto */
+    #mobile-nav.open ~ .header-up #open-menu {
+    display: none;
+    }
+
+    #mobile-nav.open ~ .header-up #close-menu {
+    display: block;
+    }
+/*HEADER*/
+    .header-up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+     header .header-down nav{
+        display: none;
+    }
+
+/*MAIN*/
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-right{
+        margin: 0;
+    }
+
+    .section-info p {
+        font-family: 0.9rem;
+    }
+
+/*FOOTER*/
+    footer{
+        font-size: 0.9rem;
+    }
+}
