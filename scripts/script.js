@@ -31,7 +31,7 @@ const allBtn = document.getElementById("all");
 const cseBtn = document.getElementById("cse");
 const wddBtn = document.getElementById("wdd");
 
-const sections = document.querySelectorAll(".ticks section");
+const sections = document.querySelectorAll(".ticks .cours");
 const totalCredits = document.getElementById("totalCredits");
 
 let total = 0;
@@ -48,7 +48,7 @@ wddBtn.addEventListener("click", () => showSection("wdd"));
 showSection("all");
 
 /* --- seleccionar materias --- */
-const courses = document.querySelectorAll(".ticks section h2");
+const courses = document.querySelectorAll(".ticks .cours div");
 
 courses.forEach(course => {
   course.addEventListener("click", () => {

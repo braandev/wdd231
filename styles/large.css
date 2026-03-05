@@ -203,13 +203,13 @@ header .header-down nav a:hover{
   margin-bottom: 1rem;
 }
 
-.ticks section {
+.ticks .cours {
   display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
 
-.ticks section h2 {
+.ticks .cours div {
   background: gainsboro;
   padding: 0.5rem;
   border-radius: 5px;
@@ -219,12 +219,12 @@ header .header-down nav a:hover{
 }
 
 /* cuando está seleccionada */
-.ticks section h2.selected {
+.ticks .cours div.selected {
   background: #9fd39f;
 }
 
 /* tick */
-.ticks section h2.selected::after {
+.ticks .cours div.selected::after {
   content: "✔";
   position: absolute;
   right: 8px;
