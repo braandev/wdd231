@@ -31,9 +31,7 @@ body{
 
 /**** HEADER ****/
 
-header{
 
-}
     header .header-up .logo{
         display: flex;
         padding-top: 1rem;
@@ -42,7 +40,7 @@ header{
         font-size: 1.2rem;
         justify-content: left;
         align-items: center;
-        font-family: var(--font--secondary);
+        font-family: var(--font-secondary);
     }
         header .header-up .logo img{
             height: 30px;
@@ -52,6 +50,7 @@ header{
 
     header .header-down{
         background-color: black;
+        color: white;
         
     }
         header .header-down nav{
@@ -76,7 +75,7 @@ header .header-down nav a:hover{
  main .title-section{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-family: var(--font--secondary);
+    font-family: var(--font-secondary);
 }
 
 .info{
@@ -101,7 +100,7 @@ header .header-down nav a:hover{
         .info .section-left .section-info p{
             gap: 1rem;
             padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-            font-family: var(--font--secondary);
+            font-family: var(--font-secondary);
             text-align: justify;
         }
     
@@ -171,13 +170,7 @@ header .header-down nav a:hover{
   text-align: center;
 }
 
-.courses-container h2 {
-  background: #222;
-  color: white;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
+
 
 .courses {
   display: grid;
@@ -216,6 +209,7 @@ header .header-down nav a:hover{
   cursor: pointer;
   position: relative;
   color: black;
+  font-family: var(--font-secondary);
 }
 
 /* cuando está seleccionada */
@@ -238,7 +232,7 @@ header .header-down nav a:hover{
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-family: var(--font--secondary);
+    font-family: var(--font-secondary);
 }
 /*** section Socials ***/
 
@@ -262,5 +256,5 @@ footer{
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: var(--font--secondary);
+    font-family: var(--font-secondary);
 }
