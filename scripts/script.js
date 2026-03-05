@@ -48,7 +48,7 @@ wddBtn.addEventListener("click", () => showSection("wdd"));
 showSection("all");
 
 /* --- seleccionar materias --- */
-const courses = document.querySelectorAll(".ticks section div");
+const courses = document.querySelectorAll(".ticks section h2");
 
 courses.forEach(course => {
   course.addEventListener("click", () => {

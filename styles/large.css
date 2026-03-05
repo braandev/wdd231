@@ -16,8 +16,8 @@ body{
 :root{
     --background-color-primary: black;
     --background-color-secondary: gainsboro;
-    --font--primary: font-family: "Lato", sans-serif;
-    --font--secondary: "Montserrat", sans-serif; 
+    --font-primary: "Lato", sans-serif;
+    --font-secondary: "Montserrat", sans-serif; 
 }
 
 #close-menu{
@@ -131,9 +131,7 @@ header .header-down nav a:hover{
     }
 
 /*** section Web Courses ***/
-.courses-container{
-    margin-top: 1rem;
-}
+
     .courses-container h2{
         background-color: black;
         text-align: center;
@@ -167,8 +165,9 @@ header .header-down nav a:hover{
     }
 
 /**COURSES**/
-.courses-container {
+.courses-container{
   margin: auto;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -210,21 +209,22 @@ header .header-down nav a:hover{
   gap: 0.5rem;
 }
 
-.ticks section div {
-  background: #ddd;
+.ticks section h2 {
+  background: gainsboro;
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
+  color: black;
 }
 
 /* cuando está seleccionada */
-.ticks section div.selected {
+.ticks section h2.selected {
   background: #9fd39f;
 }
 
 /* tick */
-.ticks section div.selected::after {
+.ticks section h2.selected::after {
   content: "✔";
   position: absolute;
   right: 8px;
