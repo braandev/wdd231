@@ -197,7 +197,7 @@ header .header-down nav a:hover{
 }
 
 .ticks .cours {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
@@ -219,6 +219,20 @@ header .header-down nav a:hover{
 
 /* tick */
 .ticks .cours div.selected::after {
+  content: "✔";
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  color: green;
+  font-weight: bold;
+}
+
+.completed {
+  background: #9fd39f;
+  position: relative;
+}
+
+.completed::after {
   content: "✔";
   position: absolute;
   right: 8px;
