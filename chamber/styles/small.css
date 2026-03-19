@@ -1,0 +1,28 @@
+@media (max-width: 1000px){
+
+    #members.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    }
+
+    .container-footer{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+   
+}
+
+
+@media (max-width: 400px){
+
+    #members.grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    }
+   
+}

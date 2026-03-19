@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "IDWeb",
+      "address": "2115 S Vista Avenue Boise ID 83705",
+      "phone": "(208) 342-9386",
+      "website": "https://idahowebsites.com",
+      "image": "logo1.webp",
+      "membership": 3,
+      "industry": "Web Development"
+    },
+    {
+      "name": "Surge Web Design",
+      "address": "4072 E Amity Drive Meridian ID 83646",
+      "phone": "(208) 631-0640",
+      "website": "https://surgewebdesign.com",
+      "image": "logo2.webp",
+      "membership": 2,
+      "industry": "Web Design"
+    },
+    {
+      "name": "GraphicZen",
+      "address": "1788 E Summerplace Court Meridian ID 83646",
+      "phone": "(208) 631-4984",
+      "website": "https://graphiczen.com",
+      "image": "logo3.webp",
+      "membership": 1,
+      "industry": "Graphic Design"
+    },
+    {
+      "name": "Peppershock Media",
+      "address": "1215 3rd Street Nampa ID 83651",
+      "phone": "(208) 461-5070",
+      "website": "https://peppershock.com",
+      "image": "logo4.webp",
+      "membership": 3,
+      "industry": "Marketing"
+    },
+    {
+      "name": "Flash Tech Services",
+      "address": "Star Idaho 83669",
+      "phone": "(208) 488-5810",
+      "website": "https://flashtechnicalservices.com",
+      "image": "logo5.webp",
+      "membership": 2,
+      "industry": "IT Services"
+    },
+    {
+      "name": "Metro Express",
+      "address": "1725 E Overland Road Meridian ID 83642",
+      "phone": "(208) 888-4073",
+      "website": "https://metroexpresscarwash.com",
+      "image": "logo6.webp",
+      "membership": 1,
+      "industry": "Car Wash"
+    },
+    {
+      "name": "Roaring Springs",
+      "address": "400 W Overland Rd Meridian ID 83642",
+      "phone": "(208) 898-0900",
+      "website": "https://roaringsprings.com",
+      "image": "logo7.webp",
+      "membership": 2,
+      "industry": "Entertainment"
+    }
+  ]
+}
