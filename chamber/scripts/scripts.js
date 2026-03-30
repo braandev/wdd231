@@ -1,55 +1,78 @@
-const Year = new Date().getFullYear();
+const year = new Date().getFullYear();
+document.getElementById("year").innerHTML = `© ${year} Argentina Chamber of Commerce`;
+document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
 
-document.getElementById("year").innerHTML = `© ${Year} Argentina Chamber of Commerce`;
+/******* GRID & LIST *******/
 
-document.getElementById("lastModified").innerHTML = `Last Modified: ${document.lastModified}`
+let membersData = [];
 
-//********/
-const url = "data/members.json";
-const container = document.querySelector("#members");
-
-async function getMembers(){
-
-    const response = await fetch(url);
+async function loadMembers() {
+    const response = await fetch('data/members.json');
     const data = await response.json();
-
-    displayMembers(data.members);
-
+    membersData = data.members;
+    displayMembers(membersData);
 }
 
-function displayMembers(members){
+function displayMembers(members) {
+    const container = document.getElementById('container');
+    container.className = 'grid-temple';
+    container.innerHTML = '';
 
-    members.forEach(member => {
-
-        const card = document.createElement("section");
-        card.classList.add("card");
-
-        card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
+    members.forEach((member, i) => {
+        const div = document.createElement('div');
+        div.className = 'member-card';
+        div.style.animationDelay = `${i * 0.06}s`;
+        div.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <div class="name">${member.name}</div>
+            <div class="address">${member.address}</div>
+            <div class="phone">${member.phone}</div>
             <a href="${member.website}" target="_blank">${member.website}</a>
         `;
-
-        container.appendChild(card);
-
+        container.appendChild(div);
     });
-
 }
 
-getMembers();
+function displayList(members) {
+    const container = document.getElementById('container');
+    container.className = 'list-view';
+    container.innerHTML = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    `;
 
+    const tbody = document.getElementById('table-body');
+    members.forEach(member => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${member.name}</td>
+            <td>${member.address}</td>
+            <td>${member.phone}</td>
+            <td><a href="${member.website}" target="_blank">${member.website}</a></td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
 
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-
-gridButton.addEventListener("click", () => {
-    container.classList.add("grid");
-    container.classList.remove("list");
+document.getElementById('grid').addEventListener('click', () => {
+    document.getElementById('grid').classList.add('active');
+    document.getElementById('list').classList.remove('active');
+    displayMembers(membersData);
 });
 
-listButton.addEventListener("click", () => {
-    container.classList.add("list");
-    container.classList.remove("grid");
+document.getElementById('list').addEventListener('click', () => {
+    document.getElementById('list').classList.add('active');
+    document.getElementById('grid').classList.remove('active');
+    displayList(membersData);
 });
+
+loadMembers();

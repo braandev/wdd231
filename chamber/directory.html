@@ -4,66 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Title -->
     <title>Argentina Chamber of Commerce | Supporting Businesses and Entrepreneurs</title>
 
-    <!-- SEO Meta Tags -->
     <meta name="description" content="The Argentina Chamber of Commerce promotes business development, supports entrepreneurs, and strengthens local commerce through training, networking, and institutional representation.">
-
     <meta name="author" content="Brandon Cazorla">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 
-    <!-- Facebook / Open Graph Meta -->
     <meta property="og:title" content="Argentina Chamber of Commerce">
     <meta property="og:description" content="We support businesses and entrepreneurs in Argentina by providing resources, training, and networking opportunities.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.yourchamberofcommerce.com/directory.html">
     <meta property="og:image" content="https://www.yourchamberofcommerce.com/images/chamber-commerce.jpg">
-    
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
-
 <body>
     <header>
-
+        <p></p>
     </header>
 
     <main>
+        <h2>Business Directory</h2>
         <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+            <button id="grid" class="active">⊞ Grid</button>
+            <button id="list">≡ List</button>
         </div>
 
-        <section id="members" class="grid"></section>
+        <div id="container"></div>
     </main>
 
-
-    <footer class="container-footer">
-            <div class="based">
-                
+    <footer>
+        <div class="footer-container">
+            <div class="info-container description">
+                <p>Argentina Chamber of Commerce</p>
                 <p>Argentina, Buenos Aires</p>
-                <p>Recoleta, Av.San Martin 3012</p>
-                <p><a href="">contact@argchamber.org</a></p>
-                <p><a href="">(+54) 011 2323-4332</a></p>
+                <p>Palermo, Av.Belgrano 1523</p>
+                <p>info@chamberargentina.org</p>
+                <p>(+54) 11 28392912</p>
             </div>
 
-            <div class="footer-img">
-                <img src="images/youtube.png" alt="Youtube logo">
-                <img src="images/x.png" alt="X Logo">
-                <img src="images/linkedin.png" alt="LinkedIn Logo">
+            <div class="logos-container description">
+                <img src="images/youtube.png" alt="Logo YouTube">
+                <img src="images/twitter.png" alt="Logo Twitter">
+                <img src="images/linkedin.png" alt="Logo LinkedIn">
             </div>
 
-            <div class="student">
+            <div class="student-container description">
                 <p>WDD231 Class Project</p>
                 <p>Brandon Cazorla</p>
-                <p id="year"></p>
-                <p id="lastModified"></p>
+                <p><span id="year"></span></p>
+                <p><span id="lastModified"></span></p>
             </div>
+        </div>
     </footer>
-    
 </body>
 </html>

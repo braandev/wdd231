@@ -1,28 +1,90 @@
-@media (max-width: 1000px){
+/* ── MOBILE FIRST: hasta 600px ── */
+@media (max-width: 600px) {
 
-    #members.grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:20px;
+    main h2 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
     }
 
-    .container-footer{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: flex-start;
+    .menu button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* GRID: 1 columna en móvil */
+    .grid-temple {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .member-card {
+        padding: 1.2rem 1rem;
+    }
+
+    /* LIST: scroll horizontal si no entra */
+    .list-view {
+        margin: 0 1rem 2rem;
+        overflow-x: auto;
+    }
+
+    .list-view table {
+        min-width: 500px;
+    }
+
+    .list-view thead th,
+    .list-view tbody td {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.78rem;
+    }
+
+    /* FOOTER: apilado en columna */
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .logos-container {
         justify-content: center;
-        gap: 2rem;
     }
-   
+
+    .logos-container img {
+        height: 40px;
+    }
 }
 
+/* ── TABLET: 601px a 900px ── */
+@media (min-width: 601px) and (max-width: 900px) {
 
-@media (max-width: 400px){
-
-    #members.grid{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:20px;
+    main h2 {
+        font-size: 1.7rem;
     }
-   
+
+    /* GRID: 2 columnas en tablet */
+    .grid-temple {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1.25rem;
+    }
+
+    /* LIST: scroll horizontal si no entra */
+    .list-view {
+        margin: 0 1.25rem 2rem;
+        overflow-x: auto;
+    }
+
+    .list-view table {
+        min-width: 560px;
+    }
+
+    /* FOOTER: más compacto */
+    .footer-container {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .logos-container img {
+        height: 50px;
+    }
 }
