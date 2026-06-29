@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/** Header Part **/
+
+.header-name-site{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+    .header-name-site img{
+        height: 50px;
+        width: auto;
+    }
+
+
+/** Header Nav  **/
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.nav{
+    background-color: black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+}
+
+    .nav ul{
+        display: flex;
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+/** Main Part - First Section Part**/
+/** Title **/
+.title-page{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+/** About Me **/
+
+.first-section{   /*This part I made the grid for the columns*/
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+article h3{
+    text-align: center;
+}
