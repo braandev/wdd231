@@ -1,0 +1,8 @@
+[
+  { "course": "WDD 130", "title": "Web Fundamentals", "category": "wdd", "credits": 3, "completed": false },
+  { "course": "WDD 131", "title": "Dynamic Web Fundamentals", "category": "wdd", "credits": 3, "completed": false },
+  { "course": "WDD 231", "title": "Web Frontend Development I", "category": "wdd", "credits": 3, "completed": false },
+  { "course": "CSE 110", "title": "Introduction to Programming", "category": "cse", "credits": 3, "completed": false },
+  { "course": "CSE 111", "title": "Programming with Functions", "category": "cse", "credits": 3, "completed": false },
+  { "course": "CSE 210", "title": "Programming with Classes", "category": "cse", "credits": 3, "completed": false }
+]

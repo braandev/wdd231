@@ -3,63 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Home | Brandon Cazorla | WDD 231 Course Home</title>
+
+    <meta name="description" content="Personal home page for Brandon Cazorla in WDD 231. This site includes information about the student, web development projects, course certificates, and portfolio work.">
+
+    <meta name="author" content="Brandon Cazorla">
 
     <link rel="stylesheet" href="styles/style-desktop.css">
+    
+    <script type="module" src="scripts/date.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="header-name-site">
-            <img src="images/baidu.png" alt="Logo-Picture">
-            <h1>Site Name</h1>
-        </div>
+    <div class="screen">
+        <header>
+            <div class="header-name-site">
+                <img src="images/baidu.png" alt="Logo-Picture">
+                <h1>Site Name</h1>
+            </div>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Chamber Project</a></li>
-                <li><a href="">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chamber Project</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h2 class="title-page">Home</h2>
+        <main>
+            <h1 class="title-page">Home</h1>
 
-        <div class="first-section">
-            <article>
-                <h3>About Me</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto consequatur perspiciatis hic vitae adipisci dignissimos soluta suscipit ullam fugiat, alias incidunt rerum cumque, dolorem natus repellat? Unde ipsum atque accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, odio fugiat nisi in et quibusdam pariatur culpa ut voluptates dicta beatae illo perspiciatis? Amet totam dolor similique voluptatem laudantium sed!</p>
-            </article>
+            <div class="first-section">
+                <section class="about-me">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto consequatur perspiciatis hic vitae adipisci dignissimos soluta suscipit ullam fugiat, alias incidunt rerum cumque, dolorem natus repellat? Unde ipsum atque accusamus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, odio fugiat nisi in et quibusdam pariatur culpa ut voluptates dicta beatae illo perspiciatis? Amet totam dolor similique voluptatem laudantium sed!</p>
+                </section>
 
-            <aside>
-                <h3>Student Photo</h3>
-                <img src="" alt="">
-            </aside>
-        </div>
-        <!-- Part of web cetificates -->
+                <section class="aside">
+                    <h2>Student Photo</h2>
+                    <div class="center-img">
+                        <img src="images/baidu.png" alt="">
+                    </div>
+                </section>
+            </div>
+            <!-- Part of web cetificates -->
 
-        <section>
-            <h3>Web Certificate Courses</h3>
+            <section class="certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="buttons">
+                    <button>ALL</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
 
-            <button>ALL</button>
-            <button>CSE</button>
-            <button>WDD</button>
-        </section>
+                <div id="cards"></div>
+            </section>
 
-        <p>The total credits for course listed above is</p>
+            <span id="totalcredits" class="credits"></span>
 
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-    </main>
+            <div class="logos-links">
+                <a href=""><img src="images/linkedin.png" alt=""></a>
+                <a href=""><img src="images/github.png" alt=""></a>
+                <a href=""><img src="images/gorjeo.png" alt=""></a>
+            </div>
+        </main>
 
-    <footer>
-        <span></span>
-        <span></span>
-    </footer>
+        <footer>
+            <span id="currentyear"></span>
+            <span id="lastmodified"></span>
+        </footer>
+    </div>
 </body>
 </html>

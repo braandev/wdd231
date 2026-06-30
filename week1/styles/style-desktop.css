@@ -3,10 +3,29 @@
     padding: 0;
 }
 
+html,
+body{
+    height: 100%;
+}
+
+
 body{
     margin-left: 1rem;
     margin-right: 1rem;
+    
 }
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+
 /** Header Part **/
 
 .header-name-site{
@@ -53,7 +72,7 @@ li a{
 .title-page{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 /** About Me **/
@@ -61,8 +80,106 @@ li a{
 .first-section{   /*This part I made the grid for the columns*/
     display: grid;
     grid-template-columns: 60% 40%;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-article h3{
+.about-me{
+    background-color: gainsboro;
+}
+
+    .about-me h2{
+        text-align: center;
+        color: whitesmoke;
+        background-color: black;
+        padding: 0.5rem 0;
+    }
+
+    .about-me p{
+        margin: 1rem;
+    }
+
+/** Student Photo **/
+
+.aside{
+    background-color: gainsboro;
+    margin-right: 1rem;
+}
+
+    .aside h2{
+        text-align: center;
+        color: whitesmoke;
+        background-color: black;
+        padding: 0.5rem 0;
+    }
+
+    .center-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75%;
+        
+    }
+
+    .aside img{
+        height: 50px;
+        width: auto;
+        
+    }
+
+/** Certificates Parts **/
+
+    .certificate h2{
+        text-align: center;
+        color: whitesmoke;
+        background-color: black;
+        padding: 0.5rem 0;
+    }
+
+    .buttons{
+        text-align: center;
+        margin: 1rem 0.5rem;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .buttons button{
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+
+
+/** Show the span total credits **/
+
+.credits{
     text-align: center;
+}
+
+/** Icon part LinkedIn - GitHub - X **/
+
+.logos-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    
+}
+
+    .logos-links img{
+        height: 70px;
+        width: auto;
+    }
+/** Footer **/
+
+footer{
+    background-color: gainsboro;
+    text-align: center;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
 }
