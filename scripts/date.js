@@ -54,3 +54,7 @@ function renderCourses(filter){
         subjectsDiv.appendChild(card);
     });
 }
+
+document.querySelectorAll('.buttons button[data-filter]').forEach(button => {
+    button.addEventListener('click', () => renderCourses(button.dataset.filter));
+});
