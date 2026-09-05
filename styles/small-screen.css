@@ -1,0 +1,117 @@
+@media (max-width: 700px) {
+
+    body{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    /** HEADER  **/
+
+    header{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .logo-header{
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+        .hamburger span{
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1){
+            transform: translateY(9.5px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2){
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3){
+            transform: translateY(-9.5px) rotate(-45deg);
+        }
+
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 15;
+    }
+
+        nav.open{
+            max-height: 300px;
+        }
+
+        nav ul{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+            nav ul li{
+                width: 100%;
+                text-align: left;
+            }
+
+            nav ul li a{
+                display: block;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            nav a:hover{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+    /** MAIN  **/
+
+    .section-top-top{
+        grid-template-columns: 1fr;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+        button{
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    .websites{
+        gap: 1.5rem;
+    }
+
+        .websites img{
+            height: 60px;
+        }
+}

@@ -9,10 +9,15 @@ body{
     min-height: 100dvh;
     margin-right: 1rem;
     margin-left: 1rem;
+    font-family:"Roboto", sans-serif;
 
 }
 
 /** HEADER  **/
+
+    .hamburger{
+        display: none;
+    }
 
     .logo-header{
         display: flex;
@@ -56,7 +61,8 @@ body{
             li a{
                 text-decoration: none;
                 color: whitesmoke;
-                margin-left: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 
             }
 
@@ -158,12 +164,42 @@ body{
             font-size: x-large;
         }
 
+    #subjects{
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+        .course-card{
+            background-color: gainsboro;
+            border: 1px solid black;
+            width:200px;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+            .course-card p{
+                margin: 0.2rem 0;
+            }
+
+        .course-card.selected{
+            background-color: black;
+            color: whitesmoke;
+        }
+
     .section-middle p{
         text-align: center;
         font-size: 1.3rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
     }
+
+        #totalCredits{
+            font-weight: bold;
+        }
 
 
 /**section 3**/

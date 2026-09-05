@@ -7,9 +7,15 @@
     <meta name="author" content="Brandon Cazorla">
     <title>Brandon Cazorla | Home</title>
 
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/large-screen.css">
+    <link rel="stylesheet" href="styles/small-screen.css">
 
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +25,13 @@
             <p>Site Name</p>
         </div>
 
-        <nav>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="primary-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Chamber Project</a></li>
@@ -35,7 +47,7 @@
             <div class="section-top-top">
                 <div class="about-me">
                     <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nostrum velit quis dolorem magni praesentium voluptatem iste consectetur quibusdam vero alias ipsa illum cupiditate in, voluptas eligendi, non, modi molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis totam dolorem aliquam obcaecati quis quod, natus vitae cupiditate repellendus quia magnam suscipit accusamus sit facilis. Asperiores quibusdam quidem beatae!</p>
+                    <p>Hey, my name is Brandon Cazorla, i am from Argentina, Buenos Aires. I am studying the Bachelor of Software Developer in BYU, I like programming some things in my computer, create apps and websites, also I play the guitar, read books and practice martial arts. I would like in the future work in any Software company or have my own company where I offer any service, actually I am very enjoying the class with my class mates and every class with my teachers!</p>
                 </div>
 
                 <div class="image-me">
@@ -49,18 +61,22 @@
             <h2>Web Certificate Corses</h2>
 
             <div class="buttons">
-                <button>ALL</button>
-                <button>CSE</button>
-                <button>WDD</button>
+                <button onclick="renderCourses('ALL')">ALL</button>
+                <button onclick="renderCourses('CSE')">CSE</button>
+                <button onclick="renderCourses('WDD')">WDD</button>
             </div>
 
-            <p>The total creedits for course listed above is</p>
+            <div id="subjects">
+
+            </div>
+
+            <p>The total creedits for course listed above is <span id="totalCredits">0</span></p>
         </section>
 
 
         <section class="websites">
-            <a href=""><img src="images/linkedin.png" alt=""></a>
-            <a href=""><img src="images/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/brandoncazorlacosta/"><img src="images/linkedin.png" alt=""></a>
+            <a href="https://github.com/braandev"><img src="images/github.png" alt=""></a>
             <a href="https://x.com/?lang=es"><img src="images/x.png" alt=""></a>
         </section>
 
