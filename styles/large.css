@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+}
+
+/** HEADER  **/
+
+    .logo-header{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+    }
+
+        .logo-header p{
+            font-size: x-large;
+        }
+
+        .logo-header img{
+            height: 30px;
+            width: auto;
+            padding-left: 0.2rem;
+        }
+
+    nav{
+        gap: 2rem;
+        
+        background-color: black;
+        color: whitesmoke;
+
+    }
+
+        ul{
+            display: flex;
+            gap: 2rem;
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+
+            li{
+                list-style: none;
+            }
+
+            li a{
+                text-decoration: none;
+                color: whitesmoke;
+                margin-left: 1rem;
+                
+            }
+
+            nav a:hover{
+                background-color: yellow;
+                color: black;
+                padding-bottom: 1rem;
+                padding-top: 1rem; 
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+/** MAIN  **/
+/**section top**/
+/*here i put the part about me*/
+.section-top{
+    margin-right: 1rem;
+}
+
+.section-top h1{
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+
+
+.section-top-top{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+    .about-me{
+        background-color: gainsboro;
+    }
+        .about-me h2{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+
+        .about-me p{
+            margin: 1rem;
+            font-size: larger;
+        }
+
+/**section top**/
+/*Here i put the part of the image*/
+    .image-me{
+        background-color: gainsboro;
+        text-align: center;
+    }
+        .image-me h2{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .image-me img{
+            height: 300px;
+            width: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+/** Web Certificates**/
+/*Here goes the part of the web certificates*/
+.section-middle{
+    margin-bottom: 1rem;
+}
+    .section-middle h2{
+        text-align: center;
+        color: whitesmoke;
+        background-color: black;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        gap: 1rem;
+
+    }
+        button{
+            padding: 1rem 0;
+            width: 100%;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            font-size: x-large;
+        }
+
+    .section-middle p{
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+
+/**section 3**/
+.websites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+    .websites img{
+        height: 100px;
+        width: auto;
+    }
+
+/** FOOTER  **/
+
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
