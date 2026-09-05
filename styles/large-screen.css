@@ -203,7 +203,15 @@ body{
 
 
 /**section 3**/
-.websites{
+.websites h2{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.website-links{
     display: flex;
     align-items: center;
     justify-content: center;
